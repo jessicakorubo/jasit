@@ -1,0 +1,20 @@
+/* Web development services page */
+
+.service-hero { padding: 4.5rem 0 3.5rem; }
+
+.service-card { display: flex; flex-direction: column; gap: 0.7rem; }
+.service-card .service-icon { width: 42px; height: 42px; border-radius: 10px; background: rgba(226,166,59,0.12); display: flex; align-items: center; justify-content: center; margin-bottom: 0.3rem; }
+.service-card .service-icon svg { width: 21px; height: 21px; color: var(--gold-dark); }
+.service-card h3 { font-size: 1rem; }
+.service-card p { font-size: 0.88rem; color: var(--slate); }
+
+.stack-strip { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1rem; }
+
+.process-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+.process-step { display: flex; flex-direction: column; gap: 0.6rem; }
+.process-step .step-num { font-family: 'JetBrains Mono', monospace; font-weight: 600; color: var(--gold-dark); font-size: 1.1rem; }
+.process-step h4 { font-size: 0.95rem; }
+.process-step p { font-size: 0.85rem; color: var(--slate); }
+
+@media (max-width: 900px) { .process-steps { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .process-steps { grid-template-columns: 1fr; } }

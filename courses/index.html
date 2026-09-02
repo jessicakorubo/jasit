@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon-180.png" />
+<link rel="shortcut icon" href="../assets/favicon.ico" />
+<title>Tech Courses — Frontend, Backend, AI Automation &amp; Languages | JASIT Technologies</title>
+<meta name="description" content="Learn frontend development, backend development, AI automation, or a specific programming language with JASIT Technologies — project-based courses taught by working developers." />
+<link rel="canonical" href="https://jasit.com.ng/courses/" />
+<link href="../css/shared.css" rel="stylesheet" />
+<link href="../css/courses.css" rel="stylesheet" />
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo"><img src="../assets/logo-header.png" alt="JASIT Technologies" class="logo-img"></a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="../courses/index.html" class="active">Courses</a></li>
+      <li><a href="../products/smartlms.html">SmartLMS</a></li>
+      <li><a href="../services/web-dev.html">Web Development</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../contact.html" class="nav-cta">Get started</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleNav()" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<section class="course-hero ink-block">
+  <div class="wrap" style="max-width:680px;">
+    <p class="eyebrow">learn --list</p>
+    <h1 style="font-size:clamp(2rem,4.4vw,2.9rem); margin:1rem 0 1.1rem;">Learn the way software is actually built</h1>
+    <p style="color:#b6bad0; font-size:1.05rem; max-width:540px;">Four tracks, taught by people who build software for a living — not just teach it. Pick a full track, or go deep on one language at a time.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="section-label">Tracks</p>
+    <h2 class="section-title">Choose your track</h2>
+    <p class="section-sub">Every track is project-based. You leave with things you built, not just notes.</p>
+
+    <div class="grid-2" style="gap:1.5rem;">
+      <div class="card track-card">
+        <div class="track-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.75 17L4 12l5.75-5m4.5 10L20 12l-5.75-5"/></svg>
+        </div>
+        <h3>Frontend Development</h3>
+        <p>Build interfaces people enjoy using — from layout fundamentals to modern component-based frameworks.</p>
+        <div class="track-langs">
+          <span class="lang-chip">.html</span><span class="lang-chip">.css</span><span class="lang-chip">.js</span>
+        </div>
+        <a href="../courses/frontend.html" class="pillar-link">View curriculum →</a>
+      </div>
+
+      <div class="card track-card">
+        <div class="track-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12a2 2 0 002 2h10a2 2 0 002-2M5 12a2 2 0 012-2h10a2 2 0 012 2M5 12V8a2 2 0 012-2h10a2 2 0 012 2v4m-9 4h.01"/></svg>
+        </div>
+        <h3>Backend Development</h3>
+        <p>APIs, databases, authentication and servers — the systems running behind every screen.</p>
+        <div class="track-langs">
+          <span class="lang-chip">.py</span><span class="lang-chip">.sql</span><span class="lang-chip">.js</span>
+        </div>
+        <a href="../courses/backend.html" class="pillar-link">View curriculum →</a>
+      </div>
+
+      <div class="card track-card">
+        <div class="track-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        </div>
+        <h3>AI Automation</h3>
+        <p>Use AI tools and agents to automate real business workflows — practical builds, not theory.</p>
+        <div class="track-langs">
+          <span class="lang-chip">.py</span><span class="lang-chip">api</span>
+        </div>
+        <a href="../courses/ai-automation.html" class="pillar-link">View curriculum →</a>
+      </div>
+
+      <div class="card track-card">
+        <div class="track-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+        </div>
+        <h3>Programming Languages</h3>
+        <p>Go deep on a single language — Python, Java, JavaScript and more — taught on its own, in depth.</p>
+        <div class="track-langs">
+          <span class="lang-chip">.py</span><span class="lang-chip">.java</span><span class="lang-chip">.ts</span>
+        </div>
+        <a href="../courses/languages.html" class="pillar-link">View languages →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ink-block" style="padding:4.5rem 0; text-align:center;">
+  <div class="wrap" style="max-width:560px; margin:0 auto;">
+    <h2 style="font-size:clamp(1.5rem,3vw,2rem); margin-bottom:0.8rem;">Not sure which track fits you?</h2>
+    <p style="color:#b6bad0; margin-bottom:2rem;">Tell us what you're trying to build or where you want to work, and we'll point you to the right course.</p>
+    <a href="../contact.html" class="btn btn-gold">Talk to an advisor</a>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="nav-logo"><img src="../assets/logo-header.png" alt="JASIT Technologies" class="logo-img"></a>
+        <p>A Nigerian tech company teaching real-world development skills and building software that schools and businesses run on.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Learn</h4>
+        <ul>
+          <li><a href="../courses/frontend.html">Frontend</a></li>
+          <li><a href="../courses/backend.html">Backend</a></li>
+          <li><a href="../courses/ai-automation.html">AI Automation</a></li>
+          <li><a href="../courses/languages.html">Programming Languages</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Build</h4>
+        <ul>
+          <li><a href="../products/smartlms.html">SmartLMS</a></li>
+          <li><a href="../services/web-dev.html">Websites &amp; Web Apps</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 JASIT Technologies. All rights reserved.</p>
+      <p>Port Harcourt, Nigeria</p>
+    </div>
+  </div>
+</footer>
+<div id="toast" role="alert"></div>
+<script src="../js/site.js"></script>
+</body>
+</html>

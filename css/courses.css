@@ -1,0 +1,80 @@
+/* Courses index + individual course pages */
+
+.course-hero { padding: 4.5rem 0 4rem; }
+.course-hero .meta-chips { display: flex; gap: 0.6rem; flex-wrap: wrap; margin: 1.4rem 0 2rem; }
+.meta-chip {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.76rem;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.16);
+  color: #cfd3e6;
+  background: rgba(255,255,255,0.04);
+}
+
+/* Track grid on index */
+.track-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.track-card .track-icon {
+  width: 44px; height: 44px;
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(28,122,110,0.1);
+  color: var(--teal-dark);
+  margin-bottom: 0.4rem;
+}
+.track-card .track-icon svg { width: 22px; height: 22px; }
+.track-card h3 { font-size: 1.15rem; }
+.track-card p { color: var(--slate); font-size: 0.9rem; }
+.track-card .track-langs { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-top: 0.3rem; }
+.track-card a.pillar-link { font-size: 0.87rem; font-weight: 600; color: var(--ink); text-decoration: none; margin-top: 0.3rem; }
+.track-card a.pillar-link:hover { color: var(--teal-dark); }
+
+/* Language grid (languages.html) */
+.lang-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; }
+.lang-card {
+  background: var(--paper-raised);
+  border: 1px solid var(--mist);
+  border-radius: var(--radius-sm);
+  padding: 1.4rem;
+  text-align: center;
+}
+.lang-card .ext { font-family: 'JetBrains Mono', monospace; font-weight: 600; font-size: 0.95rem; color: var(--teal-dark); display: block; margin-bottom: 0.4rem; }
+.lang-card h4 { font-size: 0.98rem; margin-bottom: 0.3rem; }
+.lang-card p { font-size: 0.82rem; color: var(--slate-light); }
+
+@media (max-width: 900px) { .lang-grid { grid-template-columns: repeat(2, 1fr); } }
+
+/* Curriculum / module list — order matters here, numbering is real */
+.module-list { display: flex; flex-direction: column; gap: 0; border-top: 1px solid var(--mist); }
+.module {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 1.5rem;
+  padding: 1.6rem 0;
+  border-bottom: 1px solid var(--mist);
+}
+.module .module-num { font-family: 'JetBrains Mono', monospace; font-weight: 600; color: var(--gold-dark); font-size: 1rem; }
+.module h4 { font-size: 1.02rem; margin-bottom: 0.35rem; }
+.module p { font-size: 0.9rem; color: var(--slate); }
+
+/* who it's for */
+.audience-list { list-style: none; display: flex; flex-direction: column; gap: 0.9rem; }
+.audience-list li { display: flex; gap: 10px; align-items: flex-start; font-size: 0.95rem; }
+.audience-list svg { width: 18px; height: 18px; color: var(--teal); flex-shrink: 0; margin-top: 3px; }
+
+.placeholder-note {
+  font-size: 0.82rem;
+  color: var(--slate-light);
+  border: 1px dashed var(--mist-dark);
+  border-radius: var(--radius-sm);
+  padding: 0.9rem 1.1rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 720px) {
+  .module { grid-template-columns: 40px 1fr; }
+}

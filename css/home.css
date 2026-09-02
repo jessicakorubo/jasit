@@ -1,0 +1,75 @@
+/* Homepage */
+
+.hero {
+  padding: 5.5rem 0 4.5rem;
+}
+.hero-inner { max-width: 700px; }
+.hero h1 {
+  font-size: clamp(2.1rem, 5vw, 3.4rem);
+  margin: 1rem 0 1.25rem;
+}
+.hero h1 .accent-gold { color: var(--gold); }
+.hero h1 .accent-teal { color: #57c9b8; }
+.hero p.lead {
+  font-size: 1.08rem;
+  color: #b6bad0;
+  max-width: 540px;
+  margin-bottom: 2.25rem;
+}
+.hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2.75rem; }
+.hero .lang-strip { padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.1); }
+
+/* Pillars */
+.pillars { background: var(--paper); }
+.pillar-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.pillar-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 6px;
+  width: fit-content;
+}
+.pillar-card.learn .pillar-tag { background: rgba(226,166,59,0.15); color: var(--gold-dark); }
+.pillar-card.build .pillar-tag { background: rgba(28,122,110,0.12); color: var(--teal-dark); }
+.pillar-card.product .pillar-tag { background: rgba(25,28,42,0.07); color: var(--ink); }
+.pillar-card h3 { font-size: 1.2rem; }
+.pillar-card p { color: var(--slate); font-size: 0.92rem; }
+.pillar-card a.pillar-link { font-size: 0.88rem; font-weight: 600; color: var(--ink); text-decoration: none; margin-top: 0.4rem; }
+.pillar-card a.pillar-link:hover { color: var(--teal-dark); }
+
+/* Course teaser cards */
+#course-teaser { background: var(--paper-raised); border-top: 1px solid var(--mist); border-bottom: 1px solid var(--mist); }
+.course-teaser-card { display: flex; flex-direction: column; gap: 0.6rem; }
+.course-teaser-card .mono-tag { font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: var(--slate-light); }
+.course-teaser-card h3 { font-size: 1.05rem; }
+.course-teaser-card p { font-size: 0.88rem; color: var(--slate); }
+
+/* Split teaser (SmartLMS / Web dev) */
+.split { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: center; }
+.split-visual {
+  background: var(--paper-raised);
+  border: 1px solid var(--mist);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.82rem;
+  color: var(--slate);
+}
+.split-visual .line { display: flex; gap: 0.6rem; padding: 0.4rem 0; border-bottom: 1px dashed var(--mist); }
+.split-visual .line:last-child { border-bottom: none; }
+.split-visual .dim { color: var(--slate-light); }
+.split ul.checklist { list-style: none; display: flex; flex-direction: column; gap: 0.7rem; margin: 1.5rem 0 2rem; }
+.split ul.checklist li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.92rem; color: var(--text); }
+.split ul.checklist svg { width: 17px; height: 17px; color: var(--teal); flex-shrink: 0; margin-top: 3px; }
+
+@media (max-width: 900px) {
+  .split { grid-template-columns: 1fr; gap: 2rem; }
+}
