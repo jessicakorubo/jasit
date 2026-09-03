@@ -22,7 +22,7 @@
   width: 44px; height: 44px;
   border-radius: 10px;
   display: flex; align-items: center; justify-content: center;
-  background: rgba(28,122,110,0.1);
+  background: rgba(17,79,166,0.1);
   color: var(--teal-dark);
   margin-bottom: 0.4rem;
 }

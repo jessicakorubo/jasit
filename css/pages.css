@@ -15,7 +15,7 @@
 
 /* Contact page */
 .contact-info-item { display: flex; align-items: flex-start; gap: 1rem; }
-.contact-icon { width: 40px; height: 40px; background: rgba(28,122,110,0.1); border-radius: 9px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.contact-icon { width: 40px; height: 40px; background: rgba(17,79,166,0.1); border-radius: 9px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
 .contact-icon svg { width: 18px; height: 18px; color: var(--teal-dark); }
 .contact-info-item h4 { font-size: 0.85rem; margin-bottom: 2px; }
 .contact-info-item p, .contact-info-item a { font-size: 0.875rem; color: var(--slate); text-decoration: none; }

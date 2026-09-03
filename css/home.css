@@ -38,7 +38,7 @@
   width: fit-content;
 }
 .pillar-card.learn .pillar-tag { background: rgba(226,166,59,0.15); color: var(--gold-dark); }
-.pillar-card.build .pillar-tag { background: rgba(28,122,110,0.12); color: var(--teal-dark); }
+.pillar-card.build .pillar-tag { background: rgba(17,79,166,0.12); color: var(--teal-dark); }
 .pillar-card.product .pillar-tag { background: rgba(25,28,42,0.07); color: var(--ink); }
 .pillar-card h3 { font-size: 1.2rem; }
 .pillar-card p { color: var(--slate); font-size: 0.92rem; }

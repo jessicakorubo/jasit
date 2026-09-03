@@ -15,7 +15,7 @@
 
 .feature-card .feature-icon {
   width: 42px; height: 42px;
-  background: rgba(28,122,110,0.1);
+  background: rgba(17,79,166,0.1);
   border-radius: var(--radius-sm);
   display: flex; align-items: center; justify-content: center;
   margin-bottom: 0.9rem;
@@ -28,7 +28,7 @@
 #pricing { background: var(--paper-raised); border-top: 1px solid var(--mist); border-bottom: 1px solid var(--mist); }
 .pricing-note {
   font-size: 0.85rem; color: var(--teal-dark);
-  padding: 10px 16px; background: rgba(28,122,110,0.08);
+  padding: 10px 16px; background: rgba(17,79,166,0.08);
   border-radius: var(--radius-sm); display: inline-block; font-weight: 500;
   margin-bottom: 2rem;
 }

@@ -217,17 +217,18 @@
         </div>
       </div>
       <form class="contact-form" onsubmit="handleContactSubmit(event)">
+        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
         <div class="form-row">
-          <input type="text" placeholder="Your name" required autocomplete="name" />
-          <input type="text" placeholder="School name" required />
+          <input type="text" name="name" placeholder="Your name" required autocomplete="name" />
+          <input type="text" name="school" placeholder="School name" required />
         </div>
-        <input type="email" placeholder="Email address" required autocomplete="email" />
-        <input type="tel" placeholder="Phone / WhatsApp number" autocomplete="tel" />
-        <select>
+        <input type="email" name="email" placeholder="Email address" required autocomplete="email" />
+        <input type="tel" name="phone" placeholder="Phone / WhatsApp number" autocomplete="tel" />
+        <select name="students">
           <option value="" disabled selected>Number of students</option>
           <option>Under 150</option><option>151 – 350</option><option>351 – 600</option><option>601 – 900</option><option>Over 900</option>
         </select>
-        <textarea placeholder="Tell us about your school and what you're looking for..."></textarea>
+        <textarea name="message" placeholder="Tell us about your school and what you're looking for..."></textarea>
         <button type="submit" class="form-submit">Send message &rarr;</button>
         <p class="form-note">We'll reach out within 24 hours to schedule your demo.</p>
       </form>
